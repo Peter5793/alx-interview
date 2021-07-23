@@ -1,4 +1,6 @@
-def pascal_traingle(n):
+#usr/bin/python3
+
+def pascal_triangle(n):
 
   for line in range(0, n):
     for i in range(0, line + 1):

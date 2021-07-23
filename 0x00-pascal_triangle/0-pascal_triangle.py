@@ -1,19 +1,16 @@
-#usr/bin/python3
+#!/usr/bin/python3
+""" Print Pascal triangle """
 
 def pascal_triangle(n):
-
-  for line in range(0, n):
-    for i in range(0, line + 1):
-      print(binomialCoeff(line, i),
-      " ", end = "")
-      print()
-  
-def binomialCoeff(n, k):
-  res = 1
-  if (k > n - k ):
-    k = n - k 
-  for i in range(0, k):
-    res = res * (n - i)
-    res = res // (i + 1)
-  
-  return res
+  """ print triangel"""
+  list_1 = []
+  if n > 0:
+    for i in range(1, n + 1):
+      list_2 = []
+      last_num = 1
+      for j in range(1, i + 1):
+        list_2.append(last_num)
+        """ place binomial coeffiecient"""
+        last_num = last_num * (i - j ) // j
+      list_1.append(list_2)
+  return list_1

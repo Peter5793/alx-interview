@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Print Pascal triangle """
 
+
 def pascal_triangle(n):
   """ print triangel"""
   list_1 = []

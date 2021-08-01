@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" method that calculates the fewest operaetions 
+""" method that calculates the fewest operaetions
 needed to result in exaxtly n and h characters"""
 
 
